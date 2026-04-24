@@ -230,6 +230,9 @@ Qproxyhub/
 ## 本地文档
 
 - [使用方法.txt](./使用方法.txt)
+- [更新日志](./CHANGELOG.md)
+- [故障排查](./docs/故障排查.md)
+- [开源许可](./LICENSE)
 
 ---
 
