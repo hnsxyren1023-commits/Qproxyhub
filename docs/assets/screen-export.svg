@@ -1,0 +1,45 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#EFE8DC"/>
+  <rect x="26" y="26" width="1228" height="708" rx="24" fill="#FCFAF5" stroke="#DFCFBA"/>
+  <text x="66" y="90" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="42" font-weight="700">导出与历史中心</text>
+  <text x="66" y="128" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="20">按来源、范围、格式导出结果，并可从历史任务回放和复测</text>
+
+  <rect x="66" y="160" width="740" height="520" rx="24" fill="#F7EEDF" stroke="#D8C6AF"/>
+  <text x="96" y="208" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" font-weight="700">导出中心</text>
+  <rect x="96" y="232" width="324" height="70" rx="16" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="452" y="232" width="324" height="70" rx="16" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="96" y="320" width="324" height="70" rx="16" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="452" y="320" width="324" height="70" rx="16" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <text x="118" y="262" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">导出来源</text>
+  <text x="118" y="286" fill="#6A7484" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">当前任务</text>
+  <text x="474" y="262" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">导出范围</text>
+  <text x="474" y="286" fill="#6A7484" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">仅通过</text>
+  <text x="118" y="350" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">导出格式</text>
+  <text x="118" y="374" fill="#6A7484" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">TXT / CSV / JSON / 客户端配置</text>
+  <text x="474" y="350" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">客户端目标</text>
+  <text x="474" y="374" fill="#6A7484" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">mihomo / Clash Verge / v2rayN / NekoBox</text>
+
+  <rect x="96" y="418" width="124" height="48" rx="24" fill="#A45B26"/>
+  <text x="132" y="448" fill="#FFFFFF" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">执行导出</text>
+  <rect x="236" y="418" width="124" height="48" rx="24" fill="#EEE6DB"/>
+  <text x="264" y="448" fill="#6D5F4D" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">重试失败项</text>
+  <rect x="376" y="418" width="124" height="48" rx="24" fill="#EEE6DB"/>
+  <text x="404" y="448" fill="#6D5F4D" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">重测全部</text>
+
+  <rect x="96" y="492" width="680" height="82" rx="16" fill="#FFF9EE" stroke="#D8C6AF"/>
+  <text x="120" y="538" fill="#A1722D" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="20">Export created: ...\\exports\\export-xxx-passed.yaml</text>
+
+  <rect x="832" y="160" width="384" height="520" rx="24" fill="#F7EEDF" stroke="#D8C6AF"/>
+  <text x="862" y="208" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" font-weight="700">历史任务</text>
+  <rect x="862" y="236" width="324" height="138" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="862" y="392" width="324" height="138" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="862" y="548" width="324" height="108" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <text x="888" y="272" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">Finished</text>
+  <text x="888" y="306" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">Total 13 ｜ Pass 8 ｜ Fail 5</text>
+  <text x="888" y="334" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">proxy-test-2026-xx.csv</text>
+  <text x="888" y="428" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">Finished</text>
+  <text x="888" y="462" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">Total 125 ｜ Pass 12 ｜ Fail 113</text>
+  <text x="888" y="490" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">proxy-test-2026-xx.csv</text>
+  <text x="888" y="586" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">点历史任务可回放快照</text>
+  <text x="888" y="614" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">并可直接从历史执行复测</text>
+</svg>
