@@ -51,6 +51,8 @@ const state = {
   activeSourceType: "job",
   activeSourceId: "",
 };
+const DEMO_MODE = new URLSearchParams(window.location.search).get("demo") === "1";
+const VIEW_TARGET = new URLSearchParams(window.location.search).get("view") || "";
 
 function escapeHtml(text) {
   return String(text ?? "")
@@ -250,6 +252,264 @@ function applySnapshot(snapshot, sourceType = state.activeSourceType, sourceId =
     setPhase(`${statusLabel(snapshot?.status)} | passed ${summary.passed ?? 0}, failed ${summary.failed ?? 0}, invalid ${summary.invalid ?? 0}`);
   }
   updateExportAvailability();
+}
+
+function buildDemoSnapshot() {
+  const now = new Date().toISOString();
+  return {
+    id: "demo-job-20260424",
+    status: "finished",
+    createdAt: now,
+    startedAt: now,
+    finishedAt: now,
+    currentName: "",
+    csvPath: "D:\\Xcode\\20260423_Qproxyhub\\exports\\proxy-test-demo.csv",
+    progressPercent: 100,
+    summary: {
+      total: 13,
+      done: 13,
+      passed: 4,
+      failed: 8,
+      invalid: 1,
+      running: 0,
+      queued: 0,
+    },
+    invalid: [
+      { link: "socks5://c", reason: "Unsupported or invalid link format" },
+    ],
+    entries: [
+      {
+        name: "proxy-001-change5-07354899",
+        protocol: "socks5",
+        country: "United States",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "pMS9gypY6u10_custom_zone_US_st__city_sid_07354899_time_5",
+        password: "2140704",
+        delayMs: 4825,
+        detail: "delay=4825ms",
+        status: "passed",
+        link: "socks5://change5.owlproxy.com:7778:pMS9gypY6u10_custom_zone_US_st__city_sid_07354899_time_5:2140704",
+      },
+      {
+        name: "proxy-002-change5-58213518",
+        protocol: "socks5",
+        country: "Hong Kong",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "xgVtiMLm8580_custom_zone_HK_st__city_sid_58213518_time_5",
+        password: "2148962",
+        delayMs: 3780,
+        detail: "delay=3780ms",
+        status: "passed",
+        link: "socks5://change5.owlproxy.com:7778:xgVtiMLm8580_custom_zone_HK_st__city_sid_58213518_time_5:2148962",
+      },
+      {
+        name: "proxy-003-change5-13432077",
+        protocol: "socks5",
+        country: "Hong Kong",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "ns7qPiaYTO20_custom_zone_HK_st__city_sid_13432077_time_5",
+        password: "2148982",
+        delayMs: 3777,
+        detail: "delay=3777ms",
+        status: "passed",
+        link: "socks5://change5.owlproxy.com:7778:ns7qPiaYTO20_custom_zone_HK_st__city_sid_13432077_time_5:2148982",
+      },
+      {
+        name: "proxy-004-change5-http-11121667",
+        protocol: "http",
+        country: "United States",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "PwMC3U3SvqA0_custom_zone_US_st__city_sid_11121667_time_5",
+        password: "2165269",
+        delayMs: 4298,
+        detail: "delay=4298ms",
+        status: "passed",
+        link: "http://change5.owlproxy.com:7778:PwMC3U3SvqA0_custom_zone_US_st__city_sid_11121667_time_5:2165269",
+      },
+      {
+        name: "proxy-005-change4-51953642",
+        protocol: "socks5",
+        country: "United States",
+        host: "change4.owlproxy.com",
+        port: 7778,
+        username: "lWLvuYLt6l50_custom_zone_US_st__city_sid_51953642_time_15",
+        password: "1865166",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change4.owlproxy.com:7778:lWLvuYLt6l50_custom_zone_US_st__city_sid_51953642_time_15:1865166",
+      },
+      {
+        name: "proxy-006-change4-43758005",
+        protocol: "socks5",
+        country: "United States",
+        host: "change4.owlproxy.com",
+        port: 7778,
+        username: "lWLvuYLt6l50_custom_zone_US_st__city_sid_43758005_time_15",
+        password: "1865166",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change4.owlproxy.com:7778:lWLvuYLt6l50_custom_zone_US_st__city_sid_43758005_time_15:1865166",
+      },
+      {
+        name: "proxy-007-change4-66830152",
+        protocol: "socks5",
+        country: "United States",
+        host: "change4.owlproxy.com",
+        port: 7778,
+        username: "lWLvuYLt6l50_custom_zone_US_st__city_sid_66830152_time_15",
+        password: "1865166",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change4.owlproxy.com:7778:lWLvuYLt6l50_custom_zone_US_st__city_sid_66830152_time_15:1865166",
+      },
+      {
+        name: "proxy-008-change5-98615975",
+        protocol: "socks5",
+        country: "United States",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "BIcAM5C7bpA0_custom_zone_US_st__city_sid_98615975_time_15",
+        password: "2009301",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change5.owlproxy.com:7778:BIcAM5C7bpA0_custom_zone_US_st__city_sid_98615975_time_15:2009301",
+      },
+      {
+        name: "proxy-009-change5-94623274",
+        protocol: "socks5",
+        country: "United States",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "BIcAM5C7bpA0_custom_zone_US_st__city_sid_94623274_time_15",
+        password: "2009301",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change5.owlproxy.com:7778:BIcAM5C7bpA0_custom_zone_US_st__city_sid_94623274_time_15:2009301",
+      },
+      {
+        name: "proxy-010-change5-87736538",
+        protocol: "socks5",
+        country: "United States",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "BIcAM5C7bpA0_custom_zone_US_st__city_sid_87736538_time_15",
+        password: "2009301",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change5.owlproxy.com:7778:BIcAM5C7bpA0_custom_zone_US_st__city_sid_87736538_time_15:2009301",
+      },
+      {
+        name: "proxy-011-change4-24368457",
+        protocol: "socks5",
+        country: "United States",
+        host: "change4.owlproxy.com",
+        port: 7778,
+        username: "qWARuxHwV150_custom_zone_US_st__city_sid_24368457_time_15",
+        password: "2013081",
+        delayMs: "",
+        detail: "{\"message\":\"An error occurred in the delay test\"}",
+        status: "failed",
+        link: "socks5://change4.owlproxy.com:7778:qWARuxHwV150_custom_zone_US_st__city_sid_24368457_time_15:2013081",
+      },
+      {
+        name: "proxy-012-change4-88912940",
+        protocol: "socks5",
+        country: "United States",
+        host: "change4.owlproxy.com",
+        port: 7778,
+        username: "qWARuxHwV150_custom_zone_US_st__city_sid_88912940_time_15",
+        password: "2013081",
+        delayMs: "",
+        detail: "{\"message\":\"An error occurred in the delay test\"}",
+        status: "failed",
+        link: "socks5://change4.owlproxy.com:7778:qWARuxHwV150_custom_zone_US_st__city_sid_88912940_time_15:2013081",
+      },
+      {
+        name: "proxy-013-change5-83568659",
+        protocol: "socks5",
+        country: "Japan",
+        host: "change5.owlproxy.com",
+        port: 7778,
+        username: "xdXvxwDpDo80_custom_zone_JP_st__city_sid_83568659_time_5",
+        password: "2148943",
+        delayMs: "",
+        detail: "{\"message\":\"Timeout\"}",
+        status: "failed",
+        link: "socks5://change5.owlproxy.com:7778:xdXvxwDpDo80_custom_zone_JP_st__city_sid_83568659_time_5:2148943",
+      },
+    ],
+  };
+}
+
+function applyDemoMode() {
+  state.jobId = "demo-job-20260424";
+  state.selected.clear();
+  els.linksInput.value = [
+    "socks5://change5.owlproxy.com:7778:xdXvxwDpDo80_custom_zone_JP_st__city_sid_83568659_time_5:2148943",
+    "socks5://change5.owlproxy.com:7778:xgVtiMLm8580_custom_zone_HK_st__city_sid_58213518_time_5:2148962",
+    "socks5://change5.owlproxy.com:7778:ns7qPiaYTO20_custom_zone_HK_st__city_sid_13432077_time_5:2148982",
+    "http://change5.owlproxy.com:7778:PwMC3U3SvqA0_custom_zone_US_st__city_sid_11121667_time_5:2165269",
+    "socks5://c",
+  ].join("\n");
+  const snapshot = buildDemoSnapshot();
+  applySnapshot(snapshot, "job", state.jobId);
+  state.historyItems = [
+    {
+      id: "demo-job-20260424",
+      status: "finished",
+      createdAt: "2026-04-24T07:32:47.000Z",
+      summary: snapshot.summary,
+      csvPath: snapshot.csvPath,
+    },
+    {
+      id: "demo-job-20260424-r2",
+      status: "finished",
+      createdAt: "2026-04-24T07:28:28.000Z",
+      summary: { total: 1, passed: 0, failed: 1 },
+      csvPath: "D:\\Xcode\\20260423_Qproxyhub\\exports\\proxy-test-demo-r2.csv",
+    },
+  ];
+  state.activeSourceType = "job";
+  state.activeSourceId = state.jobId;
+  renderHistory();
+  setPhase("Finished | passed 4, failed 8, invalid 1");
+  setExportResult("Ready for export", "pass");
+  els.healthBadge.textContent = "Local service connected";
+  els.healthBadge.className = "badge pass";
+  els.runButton.disabled = true;
+  els.cancelButton.disabled = true;
+  updateExportAvailability();
+}
+
+function applyViewTarget() {
+  const target = VIEW_TARGET.trim();
+  if (!target) return;
+  const main = document.querySelector(".app-shell");
+  if (main && ["overview", "results", "export-history"].includes(target)) {
+    main.querySelectorAll(":scope > section").forEach((section) => {
+      if (section.id === target) {
+        section.style.display = "";
+      } else {
+        section.style.display = "none";
+      }
+    });
+    document.body.style.padding = "16px";
+  }
+  const anchor = document.getElementById(target);
+  if (!anchor) return;
+  setTimeout(() => {
+    anchor.scrollIntoView({ behavior: "instant", block: "start" });
+  }, 120);
 }
 
 function stopPolling() {
@@ -623,6 +883,11 @@ renderResults();
 setPhase("Waiting to start");
 setExportResult("Export result will appear here", "idle");
 bindTableInteractions();
-checkHealth();
-loadHistory();
-updateExportAvailability();
+if (DEMO_MODE) {
+  applyDemoMode();
+} else {
+  checkHealth();
+  loadHistory();
+  updateExportAvailability();
+}
+applyViewTarget();
