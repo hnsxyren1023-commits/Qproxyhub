@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Qproxyhub</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="topbar">
+        <div>
+          <p class="eyebrow">QPROXYHUB</p>
+          <h1>代理链接测试工作台</h1>
+          <p class="subtitle">测试一条就反馈一条，实时看到整体进度、当前正在测试的节点、通过率和失败原因。</p>
+        </div>
+        <div class="topbar-side">
+          <span id="healthBadge" class="badge pending">服务检查中</span>
+          <div class="mini-meta">
+            <span>本地地址</span>
+            <strong>127.0.0.1:8866</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="workspace">
+        <aside class="panel composer">
+          <div class="panel-head">
+            <h2>输入区</h2>
+          </div>
+          <label class="field">
+            <span>代理链接列表</span>
+            <textarea id="linksInput" placeholder="每行一个代理链接"></textarea>
+          </label>
+          <div class="control-grid">
+            <label class="field compact">
+              <span>超时</span>
+              <select id="timeoutSelect">
+                <option value="5000">5 秒</option>
+                <option value="8000" selected>8 秒</option>
+                <option value="12000">12 秒</option>
+                <option value="15000">15 秒</option>
+              </select>
+            </label>
+            <label class="field compact">
+              <span>并发</span>
+              <select id="concurrencySelect">
+                <option value="1" selected>1 条（更稳）</option>
+                <option value="2">2 条</option>
+                <option value="4">4 条（更快）</option>
+              </select>
+            </label>
+          </div>
+          <div class="control-grid control-grid-actions">
+            <div class="button-row">
+              <button id="runButton" class="primary">开始测试</button>
+              <button id="cancelButton" class="ghost" disabled>停止</button>
+              <button id="clearButton" class="ghost">清空</button>
+            </div>
+          </div>
+
+          <div class="tips">
+            <div class="tip"><strong>提示</strong> 单次可粘贴多行，支持 `socks5`、`http`、`hy2`、`vless`、`vmess`。</div>
+            <div class="tip"><strong>体验</strong> 测试中会持续刷新，不需要等全部结束才能看结果。</div>
+          </div>
+        </aside>
+
+        <section class="main-stage">
+          <div class="panel live-panel">
+            <div class="panel-head">
+              <h2>实时进度</h2>
+              <span id="jobStatus" class="status-tag idle">空闲</span>
+            </div>
+            <div class="progress-card">
+              <div class="progress-head">
+                <div>
+                  <span class="muted-label">当前阶段</span>
+                  <strong id="phaseText">等待开始</strong>
+                </div>
+                <div class="progress-numbers">
+                  <strong id="progressText">0 / 0</strong>
+                  <span id="progressPercent">0%</span>
+                </div>
+              </div>
+              <div class="progress-track">
+                <div id="progressBar" class="progress-bar"></div>
+              </div>
+              <div class="live-meta">
+                <div class="meta-block">
+                  <span class="muted-label">当前节点</span>
+                  <div id="currentNode" class="mono">-</div>
+                </div>
+                <div class="meta-block">
+                  <span class="muted-label">CSV 结果</span>
+                  <div id="csvPath" class="mono">尚未生成</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="summary-grid">
+              <div class="summary-card">
+                <span>总数</span>
+                <strong id="totalCount">0</strong>
+              </div>
+              <div class="summary-card good">
+                <span>通过</span>
+                <strong id="passCount">0</strong>
+              </div>
+              <div class="summary-card bad">
+                <span>失败</span>
+                <strong id="failCount">0</strong>
+              </div>
+              <div class="summary-card warn">
+                <span>无效</span>
+                <strong id="invalidCount">0</strong>
+              </div>
+              <div class="summary-card quiet">
+                <span>运行中</span>
+                <strong id="runningCount">0</strong>
+              </div>
+              <div class="summary-card quiet">
+                <span>排队中</span>
+                <strong id="queuedCount">0</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="panel invalid-panel">
+            <div class="panel-head">
+              <h2>无效输入</h2>
+            </div>
+            <div id="invalidList" class="invalid-list empty">暂时没有</div>
+          </div>
+        </section>
+      </section>
+
+      <section class="panel results-panel">
+        <div class="panel-head results-head">
+          <div>
+            <h2>详细结果</h2>
+            <p class="table-note">点击表头排序，勾选行后可复制链接或复制整行 TSV。</p>
+          </div>
+          <div class="result-tools">
+            <input id="filterInput" class="filter-input" type="text" placeholder="筛选主机 / 国家 / 协议 / 状态">
+            <button id="selectVisibleButton" class="ghost">选中可见</button>
+            <button id="clearSelectionButton" class="ghost">清空选择</button>
+            <button id="copyLinksButton" class="ghost">复制链接</button>
+            <button id="copyRowsButton" class="primary small">复制行</button>
+          </div>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th class="checkbox-col"><input id="selectAllCheckbox" type="checkbox"></th>
+                <th data-sort-key="status">状态</th>
+                <th data-sort-key="protocol">协议</th>
+                <th data-sort-key="country">国家</th>
+                <th data-sort-key="host">主机</th>
+                <th data-sort-key="port">端口</th>
+                <th data-sort-key="username">用户名</th>
+                <th data-sort-key="password">密码</th>
+                <th data-sort-key="delayMs">延迟</th>
+                <th data-sort-key="detail">说明</th>
+              </tr>
+            </thead>
+            <tbody id="resultsBody">
+              <tr>
+                <td colspan="10" class="empty">还没有测试结果</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="bottom-grid">
+        <section class="panel export-panel">
+          <div class="panel-head">
+            <h2>导出中心</h2>
+          </div>
+          <div class="export-grid">
+            <label class="field compact-wide">
+              <span>导出来源</span>
+              <select id="exportSourceType">
+                <option value="job" selected>当前任务</option>
+                <option value="history">历史任务</option>
+              </select>
+            </label>
+            <label class="field compact-wide">
+              <span>导出范围</span>
+              <select id="exportScope">
+                <option value="passed" selected>仅通过</option>
+                <option value="failed">仅失败</option>
+                <option value="all">全部结果</option>
+                <option value="selected">仅选中行</option>
+              </select>
+            </label>
+            <label class="field compact-wide">
+              <span>导出格式</span>
+              <select id="exportFormat">
+                <option value="raw-links" selected>原始链接 TXT</option>
+                <option value="csv">CSV</option>
+                <option value="json">JSON</option>
+                <option value="client">客户端配置/节点</option>
+              </select>
+            </label>
+            <label class="field compact-wide">
+              <span>客户端目标</span>
+              <select id="exportClient">
+                <option value="mihomo" selected>mihomo</option>
+                <option value="clash-verge">Clash Verge</option>
+                <option value="v2rayn">v2rayN</option>
+                <option value="nekobox">NekoBox / Nekoray</option>
+              </select>
+            </label>
+          </div>
+          <div class="button-row">
+            <button id="exportButton" class="primary">执行导出</button>
+            <button id="retryFailedButton" class="ghost">重试失败项</button>
+            <button id="retryAllButton" class="ghost">重新测试全部</button>
+          </div>
+          <p id="exportResult" class="export-result">导出结果会显示在这里</p>
+        </section>
+
+        <section class="panel history-panel">
+          <div class="panel-head">
+            <h2>历史任务</h2>
+            <button id="refreshHistoryButton" class="ghost">刷新历史</button>
+          </div>
+          <div id="historyList" class="history-list empty">还没有历史任务</div>
+        </section>
+      </section>
+    </main>
+
+    <script src="/assets/app.js"></script>
+  </body>
+</html>
