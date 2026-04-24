@@ -1,0 +1,15 @@
+{
+  "name": "qproxyhub",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Local proxy testing and export workbench for socks5/http/hy2/vless/vmess links.",
+  "type": "module",
+  "scripts": {
+    "start": "node server.mjs",
+    "dev": "node server.mjs",
+    "check": "node --check server.mjs && node --check web/assets/app.js"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
