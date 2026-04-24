@@ -1,0 +1,26 @@
+<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="360" rx="32" fill="#121826"/>
+  <circle cx="1034" cy="84" r="156" fill="#F08A24" fill-opacity="0.15"/>
+  <circle cx="178" cy="294" r="204" fill="#2F7CFF" fill-opacity="0.16"/>
+  <rect x="46" y="42" width="1108" height="276" rx="26" fill="url(#paint0_linear)"/>
+  <rect x="86" y="84" width="364" height="192" rx="22" fill="#0F1725" stroke="#2A3548"/>
+  <rect x="112" y="116" width="194" height="18" rx="9" fill="#314055"/>
+  <rect x="112" y="150" width="312" height="84" rx="16" fill="#162133"/>
+  <rect x="474" y="84" width="594" height="46" rx="16" fill="#F6F1E8"/>
+  <rect x="474" y="146" width="270" height="130" rx="20" fill="#F6F1E8"/>
+  <rect x="764" y="146" width="304" height="130" rx="20" fill="#F6F1E8"/>
+  <circle cx="110" cy="66" r="8" fill="#57C478"/>
+  <circle cx="134" cy="66" r="8" fill="#F6C453"/>
+  <circle cx="158" cy="66" r="8" fill="#F46E5E"/>
+  <text x="474" y="204" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="42" font-weight="700">Qproxyhub</text>
+  <text x="474" y="244" fill="#4A5568" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="20">本地代理测试 · 历史复测 · 多客户端导出</text>
+  <text x="474" y="104" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="600">本地工作台</text>
+  <text x="788" y="184" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="600">导出中心</text>
+  <text x="788" y="214" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">mihomo / Clash Verge / v2rayN / NekoBox</text>
+  <defs>
+    <linearGradient id="paint0_linear" x1="46" y1="42" x2="1154" y2="318" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#192234"/>
+      <stop offset="1" stop-color="#222D42"/>
+    </linearGradient>
+  </defs>
+</svg>
