@@ -1,0 +1,58 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="28" fill="#F4EEE3"/>
+  <rect x="34" y="30" width="1132" height="700" rx="24" fill="#FFFDF8" stroke="#E5D8C5"/>
+  <rect x="74" y="80" width="320" height="520" rx="24" fill="#FBF5EA" stroke="#E2D2BD"/>
+  <rect x="424" y="80" width="702" height="196" rx="24" fill="#FBF5EA" stroke="#E2D2BD"/>
+  <rect x="424" y="296" width="702" height="304" rx="24" fill="#FBF5EA" stroke="#E2D2BD"/>
+  <rect x="424" y="620" width="340" height="76" rx="20" fill="#FBF5EA" stroke="#E2D2BD"/>
+  <rect x="786" y="620" width="340" height="76" rx="20" fill="#FBF5EA" stroke="#E2D2BD"/>
+  <text x="76" y="56" fill="#AF6B2A" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">QPROXYHUB</text>
+  <text x="76" y="118" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="38" font-weight="700">代理链接测试工作台</text>
+  <text x="76" y="154" fill="#596273" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">本地测试 · 历史复测 · 多客户端导出</text>
+  <text x="102" y="214" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">输入区</text>
+  <rect x="102" y="240" width="264" height="264" rx="18" fill="#FFFFFF" stroke="#E2D2BD"/>
+  <rect x="118" y="260" width="160" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="286" width="220" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="312" width="198" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="338" width="226" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="364" width="184" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="390" width="206" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="416" width="164" height="12" rx="6" fill="#D2D8E3"/>
+  <rect x="118" y="452" width="112" height="42" rx="21" fill="#A55A25"/>
+  <text x="149" y="479" fill="#FFFFFF" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">开始测试</text>
+  <text x="452" y="122" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" font-weight="700">实时进度</text>
+  <rect x="452" y="152" width="646" height="88" rx="20" fill="#FFFFFF" stroke="#E2D2BD"/>
+  <rect x="482" y="196" width="588" height="16" rx="8" fill="#E8D2B7"/>
+  <rect x="482" y="196" width="412" height="16" rx="8" fill="#BB7027"/>
+  <text x="482" y="186" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="600">Finished | passed 8, failed 5, invalid 1</text>
+  <text x="1008" y="186" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16" font-weight="700">13 / 13</text>
+  <text x="452" y="338" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="28" font-weight="700">详细结果</text>
+  <rect x="452" y="370" width="646" height="188" rx="20" fill="#FFFFFF" stroke="#E2D2BD"/>
+  <rect x="478" y="400" width="594" height="34" rx="10" fill="#F1E5D5"/>
+  <rect x="478" y="450" width="594" height="38" rx="10" fill="#EEF7F0"/>
+  <rect x="478" y="498" width="594" height="38" rx="10" fill="#FBECEC"/>
+  <text x="498" y="423" fill="#5E6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">状态</text>
+  <text x="584" y="423" fill="#5E6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">协议</text>
+  <text x="662" y="423" fill="#5E6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">国家</text>
+  <text x="740" y="423" fill="#5E6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">主机</text>
+  <text x="946" y="423" fill="#5E6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">延迟</text>
+  <text x="1022" y="423" fill="#5E6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">说明</text>
+  <rect x="500" y="460" width="64" height="20" rx="10" fill="#DFF1E4"/>
+  <rect x="500" y="508" width="64" height="20" rx="10" fill="#F8DEDE"/>
+  <text x="516" y="474" fill="#2E8152" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">Passed</text>
+  <text x="519" y="522" fill="#B84B4B" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">Failed</text>
+  <text x="580" y="474" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">socks5</text>
+  <text x="580" y="522" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">socks5</text>
+  <text x="658" y="474" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">Hong Kong</text>
+  <text x="658" y="522" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">United States</text>
+  <text x="742" y="474" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">change5.owlproxy.com</text>
+  <text x="742" y="522" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">change4.owlproxy.com</text>
+  <text x="948" y="474" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">3909 ms</text>
+  <text x="948" y="522" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">-</text>
+  <text x="1020" y="474" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">delay=3909ms</text>
+  <text x="1020" y="522" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">Timeout</text>
+  <text x="452" y="650" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">导出中心</text>
+  <text x="814" y="650" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">历史任务</text>
+  <text x="482" y="675" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">TXT / CSV / JSON / 多客户端格式</text>
+  <text x="814" y="675" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">回看旧结果，失败项直接复测</text>
+</svg>
