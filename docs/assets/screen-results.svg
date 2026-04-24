@@ -1,0 +1,48 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#EFE8DC"/>
+  <rect x="26" y="26" width="1228" height="708" rx="24" fill="#FCFAF5" stroke="#DFCFBA"/>
+  <text x="66" y="90" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="42" font-weight="700">结果分析视图</text>
+  <text x="66" y="128" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="20">重点用于排序、筛选、多选复制和错误定位</text>
+
+  <rect x="66" y="160" width="1148" height="520" rx="24" fill="#F7EEDF" stroke="#D8C6AF"/>
+  <rect x="96" y="196" width="1090" height="54" rx="16" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="112" y="212" width="280" height="22" rx="11" fill="#EDF1F6"/>
+  <rect x="818" y="206" width="118" height="34" rx="17" fill="#EEE6DB"/>
+  <rect x="948" y="206" width="118" height="34" rx="17" fill="#EEE6DB"/>
+  <rect x="1078" y="206" width="88" height="34" rx="17" fill="#A45B26"/>
+  <text x="1110" y="228" fill="#FFFFFF" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16" font-weight="700">复制行</text>
+
+  <rect x="96" y="270" width="1090" height="376" rx="16" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="116" y="294" width="1050" height="34" rx="10" fill="#EFE2D2"/>
+  <rect x="116" y="340" width="1050" height="52" rx="10" fill="#E7F4EA"/>
+  <rect x="116" y="402" width="1050" height="52" rx="10" fill="#F9E5E5"/>
+  <rect x="116" y="464" width="1050" height="52" rx="10" fill="#E7F4EA"/>
+  <rect x="116" y="526" width="1050" height="52" rx="10" fill="#F9E5E5"/>
+  <text x="136" y="317" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">状态</text>
+  <text x="226" y="317" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">协议</text>
+  <text x="316" y="317" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">国家</text>
+  <text x="436" y="317" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">主机</text>
+  <text x="846" y="317" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">延迟</text>
+  <text x="936" y="317" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">说明</text>
+
+  <rect x="136" y="356" width="70" height="20" rx="10" fill="#DFF1E4"/>
+  <rect x="136" y="418" width="70" height="20" rx="10" fill="#F8DEDE"/>
+  <rect x="136" y="480" width="70" height="20" rx="10" fill="#DFF1E4"/>
+  <rect x="136" y="542" width="70" height="20" rx="10" fill="#F8DEDE"/>
+  <text x="156" y="370" fill="#2E7A50" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">Passed</text>
+  <text x="159" y="432" fill="#B84B4B" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">Failed</text>
+  <text x="156" y="494" fill="#2E7A50" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">Passed</text>
+  <text x="159" y="556" fill="#B84B4B" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="12" font-weight="700">Failed</text>
+
+  <text x="226" y="370" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">socks5</text>
+  <text x="316" y="370" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">Hong Kong</text>
+  <text x="436" y="370" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">change5.owlproxy.com</text>
+  <text x="846" y="370" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">3909 ms</text>
+  <text x="936" y="370" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">delay=3909ms</text>
+
+  <text x="226" y="432" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">socks5</text>
+  <text x="316" y="432" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">United States</text>
+  <text x="436" y="432" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">change4.owlproxy.com</text>
+  <text x="846" y="432" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">-</text>
+  <text x="936" y="432" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14">Timeout</text>
+</svg>
