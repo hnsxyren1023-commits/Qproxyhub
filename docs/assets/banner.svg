@@ -1,26 +1,31 @@
-<svg width="1200" height="360" viewBox="0 0 1200 360" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1200" height="360" rx="32" fill="#121826"/>
-  <circle cx="1034" cy="84" r="156" fill="#F08A24" fill-opacity="0.15"/>
-  <circle cx="178" cy="294" r="204" fill="#2F7CFF" fill-opacity="0.16"/>
-  <rect x="46" y="42" width="1108" height="276" rx="26" fill="url(#paint0_linear)"/>
-  <rect x="86" y="84" width="364" height="192" rx="22" fill="#0F1725" stroke="#2A3548"/>
-  <rect x="112" y="116" width="194" height="18" rx="9" fill="#314055"/>
-  <rect x="112" y="150" width="312" height="84" rx="16" fill="#162133"/>
-  <rect x="474" y="84" width="594" height="46" rx="16" fill="#F6F1E8"/>
-  <rect x="474" y="146" width="270" height="130" rx="20" fill="#F6F1E8"/>
-  <rect x="764" y="146" width="304" height="130" rx="20" fill="#F6F1E8"/>
-  <circle cx="110" cy="66" r="8" fill="#57C478"/>
-  <circle cx="134" cy="66" r="8" fill="#F6C453"/>
-  <circle cx="158" cy="66" r="8" fill="#F46E5E"/>
-  <text x="474" y="204" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="42" font-weight="700">Qproxyhub</text>
-  <text x="474" y="244" fill="#4A5568" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="20">本地代理测试 · 历史复测 · 多客户端导出</text>
-  <text x="474" y="104" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="600">本地工作台</text>
-  <text x="788" y="184" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="600">导出中心</text>
-  <text x="788" y="214" fill="#5C6678" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="16">mihomo / Clash Verge / v2rayN / NekoBox</text>
+<svg width="1280" height="420" viewBox="0 0 1280 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="420" rx="28" fill="#0F172A"/>
+  <rect x="36" y="34" width="1208" height="352" rx="24" fill="url(#panel)"/>
+  <circle cx="1170" cy="80" r="150" fill="#F59E0B" fill-opacity="0.12"/>
+  <circle cx="90" cy="360" r="170" fill="#2563EB" fill-opacity="0.14"/>
+
+  <rect x="78" y="86" width="320" height="220" rx="24" fill="#0B1326" stroke="#2B3A59"/>
+  <rect x="104" y="112" width="14" height="14" rx="7" fill="#4ADE80"/>
+  <rect x="126" y="112" width="14" height="14" rx="7" fill="#FACC15"/>
+  <rect x="148" y="112" width="14" height="14" rx="7" fill="#FB7185"/>
+  <rect x="104" y="148" width="176" height="16" rx="8" fill="#2F3E5F"/>
+  <rect x="104" y="180" width="250" height="96" rx="16" fill="#182742"/>
+
+  <text x="438" y="122" fill="#F5F7FB" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">QPROXYHUB</text>
+  <text x="438" y="184" fill="#FFFFFF" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="54" font-weight="800">本地代理测试工作台</text>
+  <text x="438" y="228" fill="#C7D1E5" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24">实时测试 · 历史复测 · 多客户端导出</text>
+
+  <rect x="438" y="266" width="170" height="44" rx="22" fill="#F8F2E9"/>
+  <rect x="620" y="266" width="170" height="44" rx="22" fill="#F8F2E9"/>
+  <rect x="802" y="266" width="170" height="44" rx="22" fill="#F8F2E9"/>
+  <text x="490" y="294" fill="#26344E" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">实时进度</text>
+  <text x="672" y="294" fill="#26344E" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">详细结果</text>
+  <text x="854" y="294" fill="#26344E" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">导出中心</text>
+
   <defs>
-    <linearGradient id="paint0_linear" x1="46" y1="42" x2="1154" y2="318" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#192234"/>
-      <stop offset="1" stop-color="#222D42"/>
+    <linearGradient id="panel" x1="36" y1="34" x2="1244" y2="386" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#16223A"/>
+      <stop offset="1" stop-color="#1E2C46"/>
     </linearGradient>
   </defs>
 </svg>
