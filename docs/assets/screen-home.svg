@@ -1,0 +1,48 @@
+<svg width="1280" height="760" viewBox="0 0 1280 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1280" height="760" rx="28" fill="#ECE4D7"/>
+  <rect x="26" y="26" width="1228" height="708" rx="24" fill="#FCFAF5" stroke="#DFCFBA"/>
+  <rect x="64" y="68" width="360" height="620" rx="24" fill="#F8F0E3" stroke="#D8C6AF"/>
+  <rect x="450" y="68" width="766" height="300" rx="24" fill="#F8F0E3" stroke="#D8C6AF"/>
+  <rect x="450" y="392" width="766" height="296" rx="24" fill="#F8F0E3" stroke="#D8C6AF"/>
+
+  <text x="90" y="112" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="30" font-weight="700">输入区</text>
+  <rect x="90" y="132" width="308" height="390" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="112" y="160" width="180" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="188" width="246" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="216" width="216" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="244" width="260" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="272" width="228" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="300" width="244" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="328" width="210" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="356" width="236" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="384" width="226" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="112" y="412" width="252" height="12" rx="6" fill="#CCD4DF"/>
+  <rect x="90" y="548" width="126" height="46" rx="23" fill="#A45B26"/>
+  <text x="127" y="577" fill="#FFFFFF" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">开始测试</text>
+  <rect x="230" y="548" width="78" height="46" rx="23" fill="#E9E0D4"/>
+  <text x="255" y="577" fill="#73634F" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18" font-weight="700">停止</text>
+
+  <text x="480" y="112" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="30" font-weight="700">实时进度</text>
+  <rect x="480" y="132" width="706" height="118" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <text x="512" y="176" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="21" font-weight="700">Finished ｜ passed 8，failed 5，invalid 1</text>
+  <text x="1084" y="176" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="20" font-weight="700">13 / 13</text>
+  <rect x="512" y="200" width="642" height="16" rx="8" fill="#E6CFB2"/>
+  <rect x="512" y="200" width="642" height="16" rx="8" fill="#BB7027"/>
+  <rect x="480" y="268" width="166" height="74" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="660" y="268" width="166" height="74" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="840" y="268" width="166" height="74" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="1020" y="268" width="166" height="74" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <text x="530" y="316" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">总数 13</text>
+  <text x="710" y="316" fill="#2E7A50" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">通过 8</text>
+  <text x="890" y="316" fill="#B84B4B" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">失败 5</text>
+  <text x="1064" y="316" fill="#6C5E4B" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="24" font-weight="700">无效 1</text>
+
+  <text x="480" y="438" fill="#1F2A3C" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="30" font-weight="700">详细结果</text>
+  <rect x="480" y="458" width="706" height="200" rx="18" fill="#FFFFFF" stroke="#D8C6AF"/>
+  <rect x="506" y="486" width="654" height="30" rx="10" fill="#EFE2D2"/>
+  <rect x="506" y="528" width="654" height="38" rx="10" fill="#E8F4EB"/>
+  <rect x="506" y="574" width="654" height="38" rx="10" fill="#F9E5E5"/>
+  <text x="530" y="507" fill="#5C6676" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="14" font-weight="700">状态 / 协议 / 国家 / 主机 / 延迟 / 说明</text>
+  <text x="530" y="551" fill="#2E7A50" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">通过：socks5 · Hong Kong · 3909 ms · delay=3909ms</text>
+  <text x="530" y="597" fill="#B84B4B" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="15" font-weight="700">失败：socks5 · United States · Timeout</text>
+</svg>
