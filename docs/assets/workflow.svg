@@ -1,0 +1,22 @@
+<svg width="1200" height="280" viewBox="0 0 1200 280" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="280" rx="28" fill="#F6F1E8"/>
+  <rect x="40" y="54" width="240" height="172" rx="22" fill="#FFFFFF" stroke="#E6D7C2"/>
+  <rect x="330" y="54" width="240" height="172" rx="22" fill="#FFFFFF" stroke="#E6D7C2"/>
+  <rect x="620" y="54" width="240" height="172" rx="22" fill="#FFFFFF" stroke="#E6D7C2"/>
+  <rect x="910" y="54" width="250" height="172" rx="22" fill="#FFFFFF" stroke="#E6D7C2"/>
+  <path d="M281 140H322" stroke="#BC6A22" stroke-width="6" stroke-linecap="round"/>
+  <path d="M571 140H612" stroke="#BC6A22" stroke-width="6" stroke-linecap="round"/>
+  <path d="M861 140H902" stroke="#BC6A22" stroke-width="6" stroke-linecap="round"/>
+  <text x="72" y="106" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">输入代理链接</text>
+  <text x="72" y="146" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">socks5 / http / hy2</text>
+  <text x="72" y="176" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">vless / vmess</text>
+  <text x="367" y="106" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">实时检测</text>
+  <text x="367" y="146" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">逐条反馈进度</text>
+  <text x="367" y="176" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">失败项可复测</text>
+  <text x="656" y="106" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">历史与筛选</text>
+  <text x="656" y="146" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">排序 / 勾选 / 复制</text>
+  <text x="656" y="176" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">回看历史任务</text>
+  <text x="946" y="106" fill="#1C2635" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="26" font-weight="700">导出成品</text>
+  <text x="946" y="146" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">TXT / CSV / JSON</text>
+  <text x="946" y="176" fill="#5B6472" font-family="Segoe UI, Microsoft YaHei, sans-serif" font-size="18">多客户端格式</text>
+</svg>
