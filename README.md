@@ -29,24 +29,7 @@
 ## 产品线导航
 
 - 当前仓库主线：`Qproxyhub`（本地代理测试与导出工作台）
-- 第二产品线（已启动 MVP）：[`mihomo-ui`](./mihomo-ui/README.md)
-- 官方 UI 本地部署（MetaCubeXD）：[`mihomo-ui-official-host`](./mihomo-ui-official-host/README.md)
-- 官方 UI 源码获取脚本：`tools/download-official-metacubexd.ps1`
-
----
-
-## 双 UI 并行使用
-
-你现在可以同时使用两套 UI：
-
-- 自研 UI：`http://127.0.0.1:8877/`
-- 官方 UI（MetaCubeXD）：`http://127.0.0.1:8878/`
-
-一键对比启动：
-
-```text
-启动-双UI对比.bat
-```
+- 第二产品线（已独立拆分）：[MihomoUI](https://github.com/hnsxyren1023-commits/MihomoUI)
 
 ---
 
