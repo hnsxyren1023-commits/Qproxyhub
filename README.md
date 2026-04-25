@@ -26,6 +26,30 @@
 
 ---
 
+## 产品线导航
+
+- 当前仓库主线：`Qproxyhub`（本地代理测试与导出工作台）
+- 第二产品线（已启动 MVP）：[`mihomo-ui`](./mihomo-ui/README.md)
+- 官方 UI 本地部署（MetaCubeXD）：[`mihomo-ui-official-host`](./mihomo-ui-official-host/README.md)
+- 官方 UI 源码获取脚本：`tools/download-official-metacubexd.ps1`
+
+---
+
+## 双 UI 并行使用
+
+你现在可以同时使用两套 UI：
+
+- 自研 UI：`http://127.0.0.1:8877/`
+- 官方 UI（MetaCubeXD）：`http://127.0.0.1:8878/`
+
+一键对比启动：
+
+```text
+启动-双UI对比.bat
+```
+
+---
+
 ## 产品定位
 
 Qproxyhub 是独立于 `mihomo + UI` 之外的另一条产品线，定位为：
@@ -151,4 +175,3 @@ Qproxyhub/
 
 - 本仓库仅对应 `Qproxyhub` 产品线
 - `mihomo + UI` 将作为另一条独立产品线维护
-
