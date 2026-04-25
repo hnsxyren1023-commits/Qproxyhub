@@ -1,97 +1,84 @@
 <div align="center">
-
-<img src="./docs/assets/banner.svg" alt="Qproxyhub Banner" width="100%" />
+  <img src="./docs/assets/banner.svg" alt="Qproxyhub Banner" width="100%" />
 
 # Qproxyhub
 
-### 本地代理测试与导出工作台
-
-[![平台](https://img.shields.io/badge/平台-Windows%2010%2F11-1f6feb?style=for-the-badge)](#)
-[![运行环境](https://img.shields.io/badge/运行环境-Node.js%2024%2B-7C3AED?style=for-the-badge)](#)
-[![测试内核](https://img.shields.io/badge/测试内核-mihomo-E67E22?style=for-the-badge)](#)
-[![状态](https://img.shields.io/badge/当前阶段-可用预览版-2DA44E?style=for-the-badge)](#)
-
-一个专注于 **代理连通性检测、历史复测、结果筛选与多客户端导出** 的本地工具。
+本地代理测试与导出工作台（独立产品线）
 
 <p>
-  <a href="https://github.com/hnsxyren1023-commits/Qproxyhub/releases/tag/v0.1.0">
-    <img src="https://img.shields.io/badge/立即下载-Release-BC6A22?style=for-the-badge" alt="立即下载 Release" />
+  <a href="https://github.com/hnsxyren1023-commits/Qproxyhub/releases">
+    <img src="https://img.shields.io/badge/下载-Releases-b7791f?style=for-the-badge" alt="下载 Releases" />
   </a>
-  <a href="https://github.com/hnsxyren1023-commits/Qproxyhub/releases/tag/v0.1.0">
-    <img src="https://img.shields.io/badge/Windows%20启动器-Qproxyhub.exe-2F7CFF?style=for-the-badge" alt="Windows 启动器" />
+  <a href="https://github.com/hnsxyren1023-commits/Qproxyhub">
+    <img src="https://img.shields.io/badge/平台-Windows%2010%2F11-2563eb?style=for-the-badge" alt="平台 Windows 10/11" />
+  </a>
+  <a href="https://github.com/hnsxyren1023-commits/Qproxyhub">
+    <img src="https://img.shields.io/badge/运行环境-Node.js%2024%2B-16a34a?style=for-the-badge" alt="运行环境 Node.js 24+" />
   </a>
 </p>
-
 </div>
 
 ---
 
-## 产品线导航
+## 产品线说明
 
-- 当前仓库主线：`Qproxyhub`（本地代理测试与导出工作台）
-- 第二产品线（已独立拆分）：[MihomoUI](https://github.com/hnsxyren1023-commits/MihomoUI)
-
----
-
-## 产品定位
-
-Qproxyhub 是独立于 `mihomo + UI` 之外的另一条产品线，定位为：
-
-- 代理可用性批量检测
-- 失败原因诊断
-- 历史任务回放与复测
-- 多种格式和多客户端导出
+- 本仓库是独立的 `Qproxyhub` 产品线，专注代理连通性测试、复测与导出。
+- `mihomo + UI` 已拆分到独立仓库：[`MihomoUI`](https://github.com/hnsxyren1023-commits/MihomoUI)。
 
 ---
 
-## 主要能力
+## 核心能力
 
 - 支持协议：`socks5`、`http`、`hy2`、`vless`、`vmess`
-- 单条即时反馈，不需要等全部完成
-- 进度、当前节点、通过率、失败原因实时展示
-- 详细结果可排序、筛选、单选/多选复制
-- 历史任务可回放、失败项可重试
-- 导出支持：
-  - 原始链接：TXT
-  - 表格数据：CSV / JSON
-  - 客户端配置：mihomo / Clash Verge / v2rayN / NekoBox
+- 单条即时反馈，测试过程中可实时看到通过/失败变化
+- 全局进度、当前节点、失败原因同步展示
+- 结果表格支持排序、筛选、单选/多选复制
+- 支持“重试失败项”“历史任务复测”
+- 导出支持：原始链接 `TXT`
+- 导出支持：表格数据 `CSV / JSON`
+- 导出支持：客户端配置 `mihomo / Clash Verge / v2rayN / NekoBox`
 
 ---
 
 ## 界面预览
 
 <div align="center">
-  <img src="./docs/assets/screen-home.svg" alt="Qproxyhub 首页预览" width="100%" />
+  <img src="./docs/assets/screen-home.svg" alt="首页预览" width="100%" />
 </div>
 
 <div align="center">
-  <img src="./docs/assets/screen-results.svg" alt="Qproxyhub 结果视图预览" width="100%" />
+  <img src="./docs/assets/screen-results.svg" alt="结果预览" width="100%" />
 </div>
 
 <div align="center">
-  <img src="./docs/assets/screen-export.svg" alt="Qproxyhub 导出与历史预览" width="100%" />
+  <img src="./docs/assets/screen-export.svg" alt="导出与历史预览" width="100%" />
 </div>
 
 ---
 
 ## 快速开始
 
-### 1. 下载
+### 1) 下载
 
-前往 [Releases](https://github.com/hnsxyren1023-commits/Qproxyhub/releases/tag/v0.1.0) 下载：
+前往 [Releases](https://github.com/hnsxyren1023-commits/Qproxyhub/releases) 下载：
 
-- `Qproxyhub-v0.1.0-portable.zip`（推荐）
+- `Qproxyhub-v0.1.1-portable.zip`（推荐）
 - `Qproxyhub.exe`（单文件启动器）
 
-### 2. 启动方式
+### 2) 启动
 
-1. 双击 `Qproxyhub.exe`
-2. 或双击 `Qproxyhub-启动.bat`
-3. 或 PowerShell 手动启动：
+- 双击 `Qproxyhub.exe`
+- 或双击 `Qproxyhub-启动.bat`
+- 或用 PowerShell 执行：
 
 ```powershell
-cd D:\Xcode\20260423_Qproxyhub
-powershell -ExecutionPolicy Bypass -File .\start-proxy-tester.ps1
+powershell -ExecutionPolicy Bypass -File "D:\Xcode\20260423_Qproxyhub\start-proxy-tester.ps1"
+```
+
+启动成功后访问：
+
+```text
+http://127.0.0.1:8866/
 ```
 
 ---
@@ -111,10 +98,10 @@ C:\Program Files\mihomo-windows-amd64-v1.19.24\mihomo-windows-amd64.exe
 
 ---
 
-## 推荐测试参数
+## 推荐参数
 
-- 超时：`8 秒` 或 `12 秒`
-- 并发：`1 条（更稳）`
+- 超时：`8秒` 或 `12秒`
+- 并发：`1`
 
 这样更接近人工单条直测，能减少并发压测导致的假失败。
 
@@ -127,10 +114,7 @@ Qproxyhub/
 ├─ docs/
 │  └─ assets/
 ├─ release/
-│  ├─ Qproxyhub.exe
-│  └─ Qproxyhub-v0.1.0-portable.zip
 ├─ tools/
-│  └─ QproxyhubLauncher.cs
 ├─ web/
 │  ├─ index.html
 │  └─ assets/
@@ -140,6 +124,7 @@ Qproxyhub/
 ├─ start-proxy-tester.ps1
 ├─ Qproxyhub-启动.bat
 ├─ 使用方法.txt
+├─ CHANGELOG.md
 └─ README.md
 ```
 
@@ -150,11 +135,4 @@ Qproxyhub/
 - [使用方法](./使用方法.txt)
 - [故障排查](./docs/故障排查.md)
 - [更新日志](./CHANGELOG.md)
-- [开源协议](./LICENSE)
-
----
-
-## 说明
-
-- 本仓库仅对应 `Qproxyhub` 产品线
-- `mihomo + UI` 将作为另一条独立产品线维护
+- [许可证](./LICENSE)
